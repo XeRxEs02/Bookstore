@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "khyathi":"cd backend &&  npm run dev",
+        "sharvari":"cd frontend && npm run dev"
+    }
+}
