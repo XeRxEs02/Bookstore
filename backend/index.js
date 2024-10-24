@@ -6,13 +6,7 @@ import booksRoute from './routes/booksRoute.js';
 import cors from 'cors';
 const app=express();
 app.use(express.json());
-
-app.use(
-    cors({
-    origin:'https://bookstorefrontend-one.vercel.app',
-    methods:['GET','POST','PUT','DELETE'],
-allowedHeaders:['Content-Type'],
-}));
+app.use(cors());
 app.get('/',(request,response)=>{
     console.log(request);
     return response.status(234).send('HEY THERE WELCOME!');
